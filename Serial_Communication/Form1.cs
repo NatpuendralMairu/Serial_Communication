@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
 namespace Serial_Communication
 {
-    public partial class Form1 : Form
+    public partial class Serial_Comm : MetroFramework.Forms.MetroForm
     {
-        public Form1()
+        public Serial_Comm()
         {
             InitializeComponent();
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
