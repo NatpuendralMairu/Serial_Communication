@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
+            this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
+            this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.metroComboBox1 = new MetroFramework.Controls.MetroComboBox();
-            this.metroComboBox2 = new MetroFramework.Controls.MetroComboBox();
+            this.comboBoxPorts = new MetroFramework.Controls.MetroComboBox();
+            this.comboBoxBaudRt = new MetroFramework.Controls.MetroComboBox();
             this.metroProgressBar1 = new MetroFramework.Controls.MetroProgressBar();
-            this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
-            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
-            this.metroTextBox2 = new MetroFramework.Controls.MetroTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -58,110 +58,6 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Send Here";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.metroTextBox2);
-            this.groupBox2.Controls.Add(this.metroButton4);
-            this.groupBox2.Location = new System.Drawing.Point(280, 184);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(201, 194);
-            this.groupBox2.TabIndex = 4;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Receive Here";
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.Location = new System.Drawing.Point(510, 184);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(119, 79);
-            this.metroButton1.TabIndex = 10;
-            this.metroButton1.Text = "Open Port";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.Location = new System.Drawing.Point(510, 296);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(119, 76);
-            this.metroButton2.TabIndex = 11;
-            this.metroButton2.Text = "Close Port";
-            this.metroButton2.UseSelectable = true;
-            // 
-            // metroComboBox1
-            // 
-            this.metroComboBox1.AllowDrop = true;
-            this.metroComboBox1.FormattingEnabled = true;
-            this.metroComboBox1.ItemHeight = 23;
-            this.metroComboBox1.Location = new System.Drawing.Point(28, 87);
-            this.metroComboBox1.Name = "metroComboBox1";
-            this.metroComboBox1.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox1.TabIndex = 12;
-            this.metroComboBox1.UseSelectable = true;
-            // 
-            // metroComboBox2
-            // 
-            this.metroComboBox2.AllowDrop = true;
-            this.metroComboBox2.FormattingEnabled = true;
-            this.metroComboBox2.ItemHeight = 23;
-            this.metroComboBox2.Location = new System.Drawing.Point(280, 87);
-            this.metroComboBox2.Name = "metroComboBox2";
-            this.metroComboBox2.Size = new System.Drawing.Size(121, 29);
-            this.metroComboBox2.TabIndex = 13;
-            this.metroComboBox2.UseSelectable = true;
-            // 
-            // metroProgressBar1
-            // 
-            this.metroProgressBar1.Location = new System.Drawing.Point(28, 151);
-            this.metroProgressBar1.Name = "metroProgressBar1";
-            this.metroProgressBar1.Size = new System.Drawing.Size(376, 23);
-            this.metroProgressBar1.TabIndex = 14;
-            // 
-            // metroButton3
-            // 
-            this.metroButton3.Location = new System.Drawing.Point(88, 160);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(75, 23);
-            this.metroButton3.TabIndex = 1;
-            this.metroButton3.Text = "Send";
-            this.metroButton3.UseSelectable = true;
-            // 
-            // metroButton4
-            // 
-            this.metroButton4.Location = new System.Drawing.Point(103, 159);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(75, 23);
-            this.metroButton4.TabIndex = 1;
-            this.metroButton4.Text = "Read";
-            this.metroButton4.UseSelectable = true;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(28, 62);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(79, 19);
-            this.metroLabel1.TabIndex = 15;
-            this.metroLabel1.Text = "Port Names";
-            // 
-            // metroLabel2
-            // 
-            this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(280, 62);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(74, 19);
-            this.metroLabel2.TabIndex = 16;
-            this.metroLabel2.Text = "Baud Rates";
-            // 
-            // metroLabel3
-            // 
-            this.metroLabel3.AutoSize = true;
-            this.metroLabel3.Location = new System.Drawing.Point(28, 127);
-            this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(67, 19);
-            this.metroLabel3.TabIndex = 17;
-            this.metroLabel3.Text = "Status Bar";
             // 
             // metroTextBox1
             // 
@@ -196,6 +92,27 @@
             this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // metroButton3
+            // 
+            this.metroButton3.Enabled = false;
+            this.metroButton3.Location = new System.Drawing.Point(88, 160);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(75, 23);
+            this.metroButton3.TabIndex = 1;
+            this.metroButton3.Text = "Send";
+            this.metroButton3.UseSelectable = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.metroTextBox2);
+            this.groupBox2.Controls.Add(this.metroButton4);
+            this.groupBox2.Location = new System.Drawing.Point(280, 184);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(201, 194);
+            this.groupBox2.TabIndex = 4;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Receive Here";
+            // 
             // metroTextBox2
             // 
             // 
@@ -229,6 +146,100 @@
             this.metroTextBox2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.metroTextBox2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
+            // metroButton4
+            // 
+            this.metroButton4.Enabled = false;
+            this.metroButton4.Location = new System.Drawing.Point(103, 159);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(75, 23);
+            this.metroButton4.TabIndex = 1;
+            this.metroButton4.Text = "Read";
+            this.metroButton4.UseSelectable = true;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(510, 184);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(119, 79);
+            this.metroButton1.TabIndex = 10;
+            this.metroButton1.Text = "Open Port";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.Enabled = false;
+            this.metroButton2.Location = new System.Drawing.Point(510, 296);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(119, 76);
+            this.metroButton2.TabIndex = 11;
+            this.metroButton2.Text = "Close Port";
+            this.metroButton2.UseSelectable = true;
+            // 
+            // comboBoxPorts
+            // 
+            this.comboBoxPorts.AllowDrop = true;
+            this.comboBoxPorts.FormattingEnabled = true;
+            this.comboBoxPorts.ItemHeight = 23;
+            this.comboBoxPorts.Location = new System.Drawing.Point(28, 87);
+            this.comboBoxPorts.Name = "comboBoxPorts";
+            this.comboBoxPorts.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxPorts.TabIndex = 12;
+            this.comboBoxPorts.UseSelectable = true;
+            // 
+            // comboBoxBaudRt
+            // 
+            this.comboBoxBaudRt.AllowDrop = true;
+            this.comboBoxBaudRt.FormattingEnabled = true;
+            this.comboBoxBaudRt.ItemHeight = 23;
+            this.comboBoxBaudRt.Items.AddRange(new object[] {
+            "9600",
+            "14400",
+            "19200",
+            "28800",
+            "38400",
+            "57600",
+            "115200"});
+            this.comboBoxBaudRt.Location = new System.Drawing.Point(280, 87);
+            this.comboBoxBaudRt.Name = "comboBoxBaudRt";
+            this.comboBoxBaudRt.Size = new System.Drawing.Size(121, 29);
+            this.comboBoxBaudRt.TabIndex = 13;
+            this.comboBoxBaudRt.UseSelectable = true;
+            // 
+            // metroProgressBar1
+            // 
+            this.metroProgressBar1.Location = new System.Drawing.Point(28, 151);
+            this.metroProgressBar1.Name = "metroProgressBar1";
+            this.metroProgressBar1.Size = new System.Drawing.Size(376, 23);
+            this.metroProgressBar1.TabIndex = 14;
+            // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(28, 62);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(79, 19);
+            this.metroLabel1.TabIndex = 15;
+            this.metroLabel1.Text = "Port Names";
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(280, 62);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(74, 19);
+            this.metroLabel2.TabIndex = 16;
+            this.metroLabel2.Text = "Baud Rates";
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.Location = new System.Drawing.Point(28, 127);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(67, 19);
+            this.metroLabel3.TabIndex = 17;
+            this.metroLabel3.Text = "Status Bar";
+            // 
             // Serial_Comm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -238,8 +249,8 @@
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.metroProgressBar1);
-            this.Controls.Add(this.metroComboBox2);
-            this.Controls.Add(this.metroComboBox1);
+            this.Controls.Add(this.comboBoxBaudRt);
+            this.Controls.Add(this.comboBoxPorts);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroButton1);
             this.Controls.Add(this.groupBox2);
@@ -263,8 +274,8 @@
         private MetroFramework.Controls.MetroTextBox metroTextBox2;
         private MetroFramework.Controls.MetroButton metroButton4;
         private MetroFramework.Controls.MetroButton metroButton2;
-        private MetroFramework.Controls.MetroComboBox metroComboBox1;
-        private MetroFramework.Controls.MetroComboBox metroComboBox2;
+        private MetroFramework.Controls.MetroComboBox comboBoxPorts;
+        private MetroFramework.Controls.MetroComboBox comboBoxBaudRt;
         private MetroFramework.Controls.MetroProgressBar metroProgressBar1;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
