@@ -1,13 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using MetroFramework.Forms;
 using System.IO.Ports;
 
 namespace Serial_Communication
@@ -41,17 +32,29 @@ namespace Serial_Communication
                     serialPort1.Open();
                     metroProgressBar1.Value = 100;
 
-                    metroButton1.Enabled = false;
-                    metroButton2.Enabled = true;
+                    btnOpenPort.Enabled = false;
+                    btnClosePort.Enabled = true;
                     metroTextBox1.Enabled = true;
-                    metroButton3.Enabled = true;
-                    metroButton4.Enabled = true;
+                    btnSend.Enabled = true;
+                    btnRead.Enabled = true;
                 }
             }
             catch(UnauthorizedAccessException)
             {
                 metroTextBox2.Text = "UnAuthorized Access";
             }
+        }
+
+        private void btnClosePort_Click(object sender, EventArgs e)
+        {
+                serialPort1.Close();
+
+                metroProgressBar1.Value = 0;
+                btnOpenPort.Enabled = true;
+                btnClosePort.Enabled = false;
+                metroTextBox1.Enabled = false;
+                btnSend.Enabled = false;
+                btnRead.Enabled = false;
         }
     }
 }
